@@ -3,22 +3,21 @@ Java code examples used live in class to demonstrate key concepts like classes, 
 Topics:
 Classes & Objects
 
-1 - Defining classes and objects  
-2 - Instance variables and methods  
-3 - Constructors (default, overloaded) 
-4 - Constructor chaining (this())  
-5 - The this keyword  
-6 - Accessing objects and fields (. operator or access modifier)  
-7 - UML basics (class diagrams)  
-8 - Class abstraction and encapsulation  
-9 - Static variables and methods
-10 - Constants (static final)  
-   - Visibility modifiers  (public (+) - protected (#) - package(~) - private(-)) )
-11 - Getter and setter methods  
-12 - Arrays of objects  
-13 - Immutable objects 
-14 - The toString() method 
-15 - The equals() method 
+1. Defining classes and objects  
+2. Instance variables and methods  
+3. Constructors (default, overloaded) 
+4. Constructor chaining (this()) 
+5. The this keyword  
+6. Accessing objects and fields (. operator or access modifier)  
+7. UML basics (class diagrams)
+8. Class abstraction and encapsulation  
+9. Static variables and methods
+10. Constants (static final)
+11. Visibility modifiers  public '+' protected '#' package '~'  private '-'
+12. Getter and setter methods  
+13. Arrays of objects  
+14. Immutable objects 
+15. The toString() and equals() method 
 
 ---
 
@@ -30,7 +29,7 @@ Inheritance
 19. Constructor Chaining (`super()`)
 20. The `super` Keyword (super. in method)
 21. Method Overriding
-22. Abstract Methods (stopped here section11)
+22. Abstract Methods 
 23. Object Casting (Upcasting, Downcasting)
 
 Polymorphism
@@ -46,8 +45,8 @@ Interfaces & Abstract Classes
 29. Implementing Multiple Interfaces
 30. The `Comparable<T>` Interface (`compareTo`)
 31. The `Cloneable` Interface (`clone`)
-Note: make sure to also show the array of comparable objects even if they are not 
-the same type of objects, like edible. 
+Note: Show the array of comparable objects even if they are not 
+the same class of objects, like edible. 
 
 Generics
 
