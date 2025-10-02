@@ -31,11 +31,15 @@ Inheritance
 21. Method Overriding
 22. Abstract Methods 
 23. Object Casting (Upcasting, Downcasting)
+    
+---
 
 Polymorphism
 
 24. Polymorphism (Dynamic Binding)
 25. The `instanceof` Operator (more example..)
+    
+---
 
 Interfaces & Abstract Classes
 
@@ -47,6 +51,8 @@ Interfaces & Abstract Classes
 31. The `Cloneable` Interface (`clone`)
 Note: Show the array of comparable objects even if they are not 
 the same class of objects, like edible. 
+    
+---
 
 Generics
 
