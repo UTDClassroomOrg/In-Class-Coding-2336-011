@@ -70,29 +70,36 @@ Generics
     
 ---
 **//All the topics under Lists, Stacks, Queues, and Priority Queues are part of the list package/folder.**
+
 Lists, Stacks, Queues, and Priority Queues (inside the list package)
 
 Data Structures Overview
+
 43. Definition and Importance of Data Structures
 44. Basic Operations: Insertion, Deletion, Traversal
 
 Lists
+
 45. ArrayList and LinkedList
 46. Implementations and Use Cases
 47. Differences Between ArrayList and LinkedList
 
 Stacks
+
 48. Definition and Operations: Push, Pop, Peek
 49. Applications of Stacks
 
 Queues
+
 50. Definition and Operations: Enqueue, Dequeue
 51. Applications of Queues
 
 Priority Queues
+
 52. Definition and Operations
 53. Use Cases and Implementations
 
 Implementations
+
 54. Designing and Implementing Dynamic Lists Using Linked Structures
 55. Implementing Stack and Queue Classes Using Arrays and Linked Lists
