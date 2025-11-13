@@ -1,5 +1,6 @@
 package bst;
 
+// Check
 import java.util.*;
 
 public class MyBST<E extends Comparable<E>> {
@@ -12,42 +13,43 @@ public class MyBST<E extends Comparable<E>> {
 
 	public boolean search(E key) {
 		MyTreeNode<E> current = root;
-		while(current != null) {
-			if(key.compareTo(current.element) < 0) {
+		while (current != null) {
+			if (key.compareTo(current.element) < 0) {
 				current = current.left;
-			}else if(key.compareTo(current.element) > 0) {
+			} else if (key.compareTo(current.element) > 0) {
 				current = current.right;
-			}else return true; // found
+			} else
+				return true; // found
 		}
 		return false; // key is not in the BST
 	}
-	
+
 	public boolean insert(E element) {
 
 		MyTreeNode<E> newTreeNode = new MyTreeNode<E>(element);
 
-		if(!isEmpty()) {
+		if (!isEmpty()) {
 			MyTreeNode<E> current = root;
 			MyTreeNode<E> parent = root;
 
-			while(current != null) {
-				if(element.compareTo(current.element) < 0) {
+			while (current != null) {
+				if (element.compareTo(current.element) < 0) {
 					parent = current;
 					current = current.left;
-				}else if(element.compareTo(current.element) > 0) {
+				} else if (element.compareTo(current.element) > 0) {
 					parent = current;
 					current = current.right;
-				}else {
+				} else {
 					return false; // duplication
 				}
 			}
-			if(element.compareTo(parent.element) < 0) {
+			if (element.compareTo(parent.element) < 0) {
 				parent.left = newTreeNode;
-			}else {
+			} else {
 				parent.right = newTreeNode;
 			}
 
-		}else { // the first element in this tree
+		} else { // the first element in this tree
 			root = newTreeNode;
 		}
 		return true;
@@ -55,22 +57,20 @@ public class MyBST<E extends Comparable<E>> {
 
 	public void print() {
 		dfs();
-		//bfs();
+		// bfs();
 	}
 
-
-
 	public void bfs() {
-		if(!isEmpty()) {
+		if (!isEmpty()) {
 			Queue<MyTreeNode<E>> queue = new LinkedList<MyTreeNode<E>>();
 			queue.add(root);
-			while(!queue.isEmpty()) {
+			while (!queue.isEmpty()) {
 				MyTreeNode<E> tempNode = queue.poll();
 				System.out.print(tempNode.element + " ");
-				if(tempNode.left!=null) {
+				if (tempNode.left != null) {
 					queue.add(tempNode.left);
 				}
-				if(tempNode.right!=null) {
+				if (tempNode.right != null) {
 					queue.add(tempNode.right);
 				}
 			}
@@ -81,12 +81,12 @@ public class MyBST<E extends Comparable<E>> {
 		dfs(root);
 	}
 
-	//in-order LMR
-	//pre-order MLR
-	//post-order LRM
-	
+	// in-order LMR
+	// pre-order MLR
+	// post-order LRM
+
 	private void dfs(MyTreeNode<E> current) {
-		if(current != null) {
+		if (current != null) {
 			dfs(current.left);
 			dfs(current.right);
 			System.out.print(current.element + " ");
@@ -94,14 +94,13 @@ public class MyBST<E extends Comparable<E>> {
 	}
 }
 
-class MyTreeNode<E>{
+class MyTreeNode<E> {
 	E element;
 	MyTreeNode<E> left;
 	MyTreeNode<E> right;
 
-	MyTreeNode(E element){
+	MyTreeNode(E element) {
 		this.element = element;
 	}
-
 
 }
